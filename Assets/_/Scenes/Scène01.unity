@@ -233265,6 +233265,7 @@ GameObject:
   - component: {fileID: 1281925145}
   - component: {fileID: 1281925144}
   - component: {fileID: 1281925143}
+  - component: {fileID: 1281925146}
   m_Layer: 0
   m_Name: TriggerPorte
   m_TagString: Untagged
@@ -233335,6 +233336,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1281925146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1281925142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee9ecf0560609bb4b9aac95a4d01f230, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DoorTransition
 --- !u!1001 &1282048626
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -392906,8 +392919,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7136935806770712222}
   m_Layer: 0
-  m_Name: NestedParent_Unpack
-  m_TagString: Untagged
+  m_Name: Personnage
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

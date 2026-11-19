@@ -1822,6 +1822,100 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 651319805}
   m_CullTransparentMesh: 1
+--- !u!1 &664465361
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 664465365}
+  - component: {fileID: 664465364}
+  - component: {fileID: 664465363}
+  - component: {fileID: 664465362}
+  m_Layer: 0
+  m_Name: TriggerPorte_Retour
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &664465362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 664465361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0baa0c9daeab77e428101466aea7b309, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RetourScene1
+--- !u!54 &664465363
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 664465361}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &664465364
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 664465361}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3, y: 1.5, z: 1.5}
+  m_Center: {x: 0.25660896, y: 0.084052466, z: -0.062841706}
+--- !u!4 &664465365
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 664465361}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -134.985, y: 1.086, z: 156.077}
+  m_LocalScale: {x: 0.37495703, y: 2.3085651, z: 1.1958374}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &763798074
 GameObject:
   m_ObjectHideFlags: 0
@@ -3544,6 +3638,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2730599193377940814, guid: c8aa3af8e883c6e4dbaf78236b90a9d2, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 401114962038238001, guid: c8aa3af8e883c6e4dbaf78236b90a9d2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -135.048
@@ -3588,6 +3686,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: cefde7f74339e5147afef55a9f7eeda0, type: 2}
+    - target: {fileID: 4804597177390722340, guid: c8aa3af8e883c6e4dbaf78236b90a9d2, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5925766993625676381, guid: c8aa3af8e883c6e4dbaf78236b90a9d2, type: 3}
       propertyPath: m_Name
       value: door_b
@@ -3598,46 +3700,13 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5925766993625676381, guid: c8aa3af8e883c6e4dbaf78236b90a9d2, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1600601251}
-    - targetCorrespondingSourceObject: {fileID: 5925766993625676381, guid: c8aa3af8e883c6e4dbaf78236b90a9d2, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1600601250}
-    - targetCorrespondingSourceObject: {fileID: 5925766993625676381, guid: c8aa3af8e883c6e4dbaf78236b90a9d2, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1600601249}
   m_SourcePrefab: {fileID: 100100000, guid: c8aa3af8e883c6e4dbaf78236b90a9d2, type: 3}
 --- !u!1 &1600601248 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5925766993625676381, guid: c8aa3af8e883c6e4dbaf78236b90a9d2, type: 3}
   m_PrefabInstance: {fileID: 1600601247}
   m_PrefabAsset: {fileID: 0}
---- !u!54 &1600601249
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1600601248}
-  serializedVersion: 5
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!65 &1600601250
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3653,24 +3722,12 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.9657131, y: 2.0248804, z: 0.16424854}
-  m_Center: {x: -0.48285654, y: 1.0079007, z: 0.038585473}
---- !u!114 &1600601251
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1600601248}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0baa0c9daeab77e428101466aea7b309, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::RetourScene1
+  m_Size: {x: 0.9657131, y: 2.0248804, z: 0.21890557}
+  m_Center: {x: -0.48285654, y: 1.0079007, z: 0.06591393}
 --- !u!1001 &1606880640
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4864,3 +4921,4 @@ SceneRoots:
   - {fileID: 768752597}
   - {fileID: 1607755975}
   - {fileID: 1678280220}
+  - {fileID: 664465365}

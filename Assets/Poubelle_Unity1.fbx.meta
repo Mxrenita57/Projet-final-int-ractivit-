@@ -24,6 +24,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: openPBRSurface4
     second: {fileID: 2100000, guid: 591294866468dd143a4f3f50f45f6a85, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: graffiti-texture
+    second: {fileID: 2800000, guid: 8e9aca034fae39544bf1e4ab954b9523, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

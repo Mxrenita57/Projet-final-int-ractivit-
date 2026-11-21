@@ -38447,15 +38447,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4970a093c0ec61245b90ce384f046333, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -241.061
+      value: -239.56
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4970a093c0ec61245b90ce384f046333, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.86
+      value: 8.48
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4970a093c0ec61245b90ce384f046333, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 17.369
+      value: 19.2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4970a093c0ec61245b90ce384f046333, type: 3}
       propertyPath: m_LocalRotation.w
@@ -299409,7 +299409,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!108 &1656303647
 Light:
   m_ObjectHideFlags: 0
@@ -299484,7 +299484,7 @@ Transform:
   m_GameObject: {fileID: 1656303646}
   serializedVersion: 2
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: -63.2, z: 0}
+  m_LocalPosition: {x: -76.7, y: -33.6, z: 132.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -302413,6 +302413,10 @@ PrefabInstance:
     - target: {fileID: 1811738827943104, guid: 0a804f15ce1f1d34eabed72f25b3d732, type: 3}
       propertyPath: m_Name
       value: Dynamic_power_pole_cable prefab (48)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1811738827943104, guid: 0a804f15ce1f1d34eabed72f25b3d732, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4141207164023176, guid: 0a804f15ce1f1d34eabed72f25b3d732, type: 3}
       propertyPath: m_RootOrder
@@ -367951,6 +367955,10 @@ PrefabInstance:
     - target: {fileID: 1811738827943104, guid: 0a804f15ce1f1d34eabed72f25b3d732, type: 3}
       propertyPath: m_Name
       value: Dynamic_power_pole_cable prefab (49)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1811738827943104, guid: 0a804f15ce1f1d34eabed72f25b3d732, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4141207164023176, guid: 0a804f15ce1f1d34eabed72f25b3d732, type: 3}
       propertyPath: m_RootOrder

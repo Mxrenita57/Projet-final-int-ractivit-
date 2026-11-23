@@ -7,6 +7,7 @@ public class DeclencheurCutscene : MonoBehaviour
     [Header("Elements de la cinematique")]
     public GameObject cameraCutscene;
     public GameObject dialoguePanel;
+    public NPCFollower npcFollower;
 
     [Header("Duree du dialogue")]
     public float dialogueDuration = 5f;
@@ -20,6 +21,9 @@ public class DeclencheurCutscene : MonoBehaviour
 
         if (dialoguePanel != null)
             dialoguePanel.SetActive(false);
+
+        if (npcFollower != null)
+            npcFollower.enabled = false;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -48,5 +52,9 @@ public class DeclencheurCutscene : MonoBehaviour
 
         if (cameraCutscene != null)
             cameraCutscene.SetActive(false);
+
+        if (npcFollower != null)
+            npcFollower.enabled = true;
     }
 }
+

@@ -455,4 +455,16 @@ public class NPCFollower : MonoBehaviour
         UnityEditor.Handles.Label(center + Vector3.right * radius, $" {label} {radius:0.#} m", style);
     }
 #endif
+
+public void DeclencherDegats()
+{
+    if (target == null) return;
+
+    SantePersonnage sante = target.GetComponent<SantePersonnage>();
+
+    if (sante != null)
+    {
+        sante.RecevoirDegatsAttaque();
+    }
+}
 }

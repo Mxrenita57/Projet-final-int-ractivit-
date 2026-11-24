@@ -1,6 +1,7 @@
 
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class SantePersonnage : MonoBehaviour
 {
@@ -47,9 +48,9 @@ public class SantePersonnage : MonoBehaviour
         Debug.Log("Vie restante : " + vieActuelle);
 
         if (vieActuelle <= 0)
-        {
-            Debug.Log("Le joueur est mort !");
-        }
+{
+    SceneManager.LoadScene("Échec");
+}
     }
 
     public void RecevoirDegatsAttaque()

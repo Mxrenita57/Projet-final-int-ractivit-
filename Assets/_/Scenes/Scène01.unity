@@ -12352,6 +12352,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ff6a4f0be83a89f419b7e24dd8cad154, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1680851898}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ff6a4f0be83a89f419b7e24dd8cad154, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1680851900}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ff6a4f0be83a89f419b7e24dd8cad154, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1680851901}
   m_SourcePrefab: {fileID: 100100000, guid: ff6a4f0be83a89f419b7e24dd8cad154, type: 3}
 --- !u!4 &521815542 stripped
 Transform:
@@ -38833,6 +38839,33 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1680851900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1680851893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6aee28776ce92dd4c8362468d03e6a13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SanteEnnemi
+  vieMaximale: 100
+  panneauDialogue: {fileID: 394710119}
+  texteDialogue: {fileID: 1584877031}
+--- !u!114 &1680851901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1680851893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e4c5c351a1764941a81fc2232650e80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlashEnnemi
 --- !u!1 &1682012417
 GameObject:
   m_ObjectHideFlags: 0
@@ -722414,6 +722447,7 @@ GameObject:
   - component: {fileID: 7136935806770712222}
   - component: {fileID: 7136935806770712223}
   - component: {fileID: 7136935806770712224}
+  - component: {fileID: 7136935806770712225}
   m_Layer: 0
   m_Name: Personnage
   m_TagString: Player
@@ -722668,6 +722702,22 @@ MonoBehaviour:
   degatsParCoup: 5
   barreDeVie: {fileID: 1779333152}
   effetDegats: {fileID: 1795517952}
+--- !u!114 &7136935806770712225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6593762424551660558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aeb235487f0031b4ca4283f32fcab2f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AttaquePersonnage
+  cameraJoueur: {fileID: 9138583976768246006}
+  porteeAttaque: 2
+  degats: 8
+  delaiEntreAttaques: 0.7
 --- !u!64 &7432983598192593306
 MeshCollider:
   m_ObjectHideFlags: 0

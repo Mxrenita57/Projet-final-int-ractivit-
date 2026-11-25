@@ -61,9 +61,14 @@ public class SanteEnnemi : MonoBehaviour
     }
 
     private IEnumerator DisparaitreApresDialogue()
-    {
-        yield return new WaitForSeconds(15f);
+{
+    yield return new WaitForSeconds(10f);
 
-        Destroy(gameObject);
+    if (panneauDialogue != null)
+    {
+        panneauDialogue.SetActive(false);
     }
+
+    Destroy(gameObject);
+}
 }

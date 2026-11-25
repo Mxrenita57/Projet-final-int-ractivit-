@@ -154,7 +154,9 @@ public class NPCFollower : MonoBehaviour
     private void Update()
     {
         float distance = Vector3.Distance(transform.position, target.position);
-
+        Debug.Log("Sur NavMesh : " + agent.isOnNavMesh);
+        Debug.Log("Distance joueur : " + distance + " | Vitesse ennemi : " + agent.velocity.magnitude);
+Debug.Log("Lost : " + lost + " | Distance : " + distance);
         // Pendant l'animation d'attaque, le PNJ reste sur place : ni déplacement, ni rotation.
         // À la fin du coup, les zones sont réévaluées : si la cible est partie, il repart aussitôt.
         if (IsAttacking())
@@ -170,22 +172,24 @@ public class NPCFollower : MonoBehaviour
         HitboxOff();
 
         // Zone de détection : la cible entre = poursuite, la cible sort = abandon
-        if (lost && distance <= detectionRadius)
-        {
-            lost = false;
-            paused = false;
-            agent.ResetPath();          // abandonne le point d'errance en cours
-            nextRepath = 0f;            // calcul immédiat du chemin vers la cible
-        }
-        else if (!lost && distance > detectionRadius + LoseMargin)
-        {
-            lost = true;
-            inContact = false;
-            agent.ResetPath();
-            // L'errance commence par une pause : le PNJ « cherche » avant de repartir
-            paused = true;
-            pauseEnd = Time.time + Random.Range(pauseMinMax.x, pauseMinMax.y);
-        }
+       
+if (lost && distance <= detectionRadius)
+{
+    Debug.Log("ENNEMI : joueur détecté !");
+    lost = false;
+    Debug.Log("APRÈS DÉTECTION : Lost = " + lost + " | PNJ = " + name);
+    paused = false;
+    agent.ResetPath();
+    nextRepath = 0f;
+}
+else if (!lost && distance > detectionRadius + LoseMargin)
+{
+    lost = true;
+    inContact = false;
+    agent.ResetPath();
+    paused = true;
+    pauseEnd = Time.time + Random.Range(pauseMinMax.x, pauseMinMax.y);
+}
 
         // Zone de contact : la cible entre = arrêt, la cible sort = reprise de la poursuite
         if (!lost)
@@ -206,10 +210,14 @@ public class NPCFollower : MonoBehaviour
 
         if (Chasing)
         {
+            Debug.Log("POURSUITE : " + Chasing + " | Lost : " + lost + " | Contact : " + inContact);
+
             desiredSpeed = runWhenChasing ? chaseSpeed : walkSpeed;
             if (Time.time >= nextRepath)
             {
                 agent.SetDestination(target.position);
+                Debug.Log("Chemin : " + agent.pathStatus + " | A un chemin : " + agent.hasPath + " | Arrêté : " + agent.isStopped + " | Distance restante : " + agent.remainingDistance);
+                Debug.Log("Destination demandée : " + agent.destination);
                 nextRepath = Time.time + RepathInterval;
             }
             FaceTowards(agent.steeringTarget, true);

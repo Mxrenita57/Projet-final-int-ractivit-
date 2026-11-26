@@ -7,6 +7,8 @@ public class SanteEnnemi : MonoBehaviour
     public int vieMaximale = 100;
     private int vieActuelle = 8;
 
+    // animation
+
     private FlashEnnemi flashEnnemi;
 
     public GameObject panneauDialogue;
@@ -69,6 +71,7 @@ public class SanteEnnemi : MonoBehaviour
         panneauDialogue.SetActive(false);
     }
 
+    // Déclenche l'animation Die
     Destroy(gameObject);
 }
 }
